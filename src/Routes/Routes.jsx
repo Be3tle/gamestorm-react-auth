@@ -7,11 +7,13 @@ import Register from "../Page/Login/Register";
 import PrivateRoute from "./PrivateRoute";
 import BookNow from "../Page/BookNow/BookNow";
 import AboutUs from "../Page/AboutUs/AboutUs";
+import Error from "../Page/Error/Error";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
