@@ -21,7 +21,9 @@ const Team = () => {
             <li>Easy Battle</li>
             <li>Certificate</li>
           </ul>
-          <button className="btn bg-blue-500 text-white">View Events</button>
+          <button className="btn bg-blue-500 text-white m-1">
+            View Events
+          </button>
         </div>
 
         {/* card 2 */}
@@ -36,7 +38,9 @@ const Team = () => {
             <li>Easy Battle</li>
             <li>Certificate</li>
           </ul>
-          <button className="btn bg-blue-500 text-white">View Events</button>
+          <button className="btn bg-blue-500 text-white m-1">
+            View Events
+          </button>
         </div>
 
         {/* card 3 */}
@@ -51,7 +55,9 @@ const Team = () => {
             <li>Super Battle</li>
             <li>Certificate</li>
           </ul>
-          <button className="btn bg-blue-500 text-white">View Events</button>
+          <button className="btn bg-blue-500 text-white m-1">
+            View Events
+          </button>
         </div>
       </div>
     </div>

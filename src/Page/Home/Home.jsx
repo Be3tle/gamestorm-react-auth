@@ -1,9 +1,9 @@
 import { useLoaderData } from "react-router-dom";
-import Header from "../Components/Header/Header";
-import Navbar from "../Components/Header/Navbar";
-import Services from "../Components/Services/Services";
-import Footer from "../Components/Footer/Footer";
-import Team from "../Components/Team/Team";
+import Services from "../../Components/Services/Services";
+import Footer from "../../Components/Footer/Footer";
+import Team from "../../Components/Team/Team";
+import Navbar from "../../Components/Header/Navbar";
+import Header from "../../Components/Header/Header";
 
 const Home = () => {
   const cards = useLoaderData();
