@@ -2,13 +2,13 @@
 const Team = () => {
   return (
     // main container
-    <div className="flex justify-center items-center flex-col">
-      <p className="pt-28 pb-1">Events Class</p>
+    <div className="flex justify-center items-center flex-col bg-gray-100">
+      <p className="pt-24 pb-1">Events Class</p>
       <h1 className="text-2xl font-bold mb-7">Let's Join Your Team</h1>
       <hr className="w-16 text-center h-1 bg-blue-400 mb-4" />
 
       {/* card container */}
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 mb-7">
         {/* card 1 */}
         <div
           className={`flex w-64 flex-col rounded-lg mx-5 border-slate-300 border-2`}

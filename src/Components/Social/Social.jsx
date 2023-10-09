@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 const Social = () => {
   return (
     <div>
-      <div className="p-2 mb-6">
+      <div className="p-2 mb-6 text-white">
         <h2 className="text-xl mb-4">Find Us On</h2>
         <a
           className="p-2 flex text-lg items-center border rounded-t-lg"

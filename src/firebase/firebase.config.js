@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBzJutsJ4xxlOY3W0MzXlrg7o0tzMLBHyg",
-  authDomain: "gamestorm-react-auth-d9c59.firebaseapp.com",
-  projectId: "gamestorm-react-auth-d9c59",
-  storageBucket: "gamestorm-react-auth-d9c59.appspot.com",
-  messagingSenderId: "141288651342",
-  appId: "1:141288651342:web:0964107e842906e09ee11f",
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase

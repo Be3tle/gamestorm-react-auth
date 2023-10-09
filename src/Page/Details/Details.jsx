@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import useGetAllData from "../../hooks/useGetAllData";
 import DetailsCard from "./DetailsCard";
+import Navbar from "../../Components/Header/Navbar";
 
 const Details = () => {
   const { id } = useParams();
@@ -25,6 +26,7 @@ const Details = () => {
 
   return (
     <div>
+      <Navbar></Navbar>
       <DetailsCard card={card}></DetailsCard>
     </div>
   );

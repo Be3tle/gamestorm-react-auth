@@ -1,8 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "./Gamestorm.jpg";
-import user from "./user.png";
+import emblem from "./user.png";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logout } = useContext(AuthContext);
+
+  const handleSignOut = () => {
+    logout().then().catch();
+  };
+
   const navLinks = (
     <>
       <li>
@@ -53,12 +61,21 @@ const Navbar = () => {
         <div className="navbar-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src={user} />
+              <img src={emblem} />
             </div>
           </label>
-          <Link>
-            <button className="btn bg-blue-500 text-white">Join Now</button>
-          </Link>
+          {user ? (
+            <button
+              onClick={handleSignOut}
+              className="btn bg-blue-500 text-white"
+            >
+              Sign Out
+            </button>
+          ) : (
+            <Link to="/login">
+              <button className="btn bg-blue-500 text-white">Join Now</button>
+            </Link>
+          )}
         </div>
       </div>
     </div>
