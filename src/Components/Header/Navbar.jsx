@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../public/Gamestorm.jpg";
-import user from "../../public/user.png";
+import logo from "./Gamestorm.jpg";
+import user from "./user.png";
 
 const Navbar = () => {
   const navLinks = (

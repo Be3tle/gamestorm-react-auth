@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Events Competition",
+    "image": "https://i.postimg.cc/X7CgJwhW/events-competition.jpg",
+    "description": "We bring the right people together to challenge established thinking and drive transform in 2023"
+  },
+  {
+    "id": 2,
+    "title": "Live Streaming",
+    "image": "https://i.postimg.cc/Bbdcp6jR/live-stream.jpg",
+    "description": "We bring the right people together to challenge established thinking and drive transform in 2023"
+  },
+  {
+    "id": 3,
+    "title": "Gaming Courses",
+    "image": "https://i.postimg.cc/wMtQDJjh/gaming-courses.jpg",
+    "description": "We bring the right people together to challenge established thinking and drive transform in 2023"
+  },
+  {
+    "id": 4,
+    "title": "E Sport Community",
+    "image": "https://i.postimg.cc/52WSFXdC/esport-community.jpg",
+    "description": "We bring the right people together to challenge established thinking and drive transform in 2023"
+  },
+  {
+    "id": 5,
+    "title": "Prize Pool",
+    "image": "https://i.postimg.cc/pr7kSC6G/prize-pool.jpg",
+    "description": "We bring the right people together to challenge established thinking and drive transform in 2023"
+  },
+  {
+    "id": 6,
+    "title": "24/7 Support",
+    "image": "https://i.postimg.cc/zDMj8dxp/247-support.jpg",
+    "description": "We bring the right people together to challenge established thinking and drive transform in 2023"
+  }
+]
