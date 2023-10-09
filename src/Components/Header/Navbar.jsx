@@ -5,10 +5,10 @@ import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
-  const { user, logout } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
 
   const handleSignOut = () => {
-    logout().then().catch();
+    logOut().then().catch();
   };
 
   const navLinks = (
