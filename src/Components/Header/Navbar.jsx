@@ -6,7 +6,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-
+  console.log(user);
   const handleSignOut = () => {
     logOut().then().catch();
   };
@@ -61,7 +61,7 @@ const Navbar = () => {
         <div className="navbar-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <img src={emblem} />
+              <img src={user ? user?.photoURL : emblem} />
             </div>
           </label>
           {user ? (
