@@ -5,14 +5,30 @@ import { AuthContext } from "../../Provider/AuthProvider";
 import Footer from "../../Components/Footer/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../../firebase/firebase.config";
 
 const Login = () => {
+  const provider = new GoogleAuthProvider();
+  const auth = getAuth(app);
   const { signIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
 
   const [loginError, setLoginError] = useState("");
 
+  const handleGoogleSignIn = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        // navigate after login
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  };
   const handleLogin = (e) => {
     e.preventDefault();
     console.log(e.currentTarget);
@@ -76,8 +92,15 @@ const Login = () => {
             <button className="btn bg-blue-500 hover:bg-blue-700 text-white">
               Sign in
             </button>
+            <button
+              onClick={handleGoogleSignIn}
+              className="btn bg-blue-500 hover:bg-blue-700 text-white mt-7"
+            >
+              Or sign in with Google
+            </button>
           </div>
         </form>
+
         <p className="text-center mt-4">
           Do not have an account?{" "}
           <Link
