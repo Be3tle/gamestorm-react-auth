@@ -21,7 +21,7 @@ const Team = () => {
             <li>Easy Battle</li>
             <li>Certificate</li>
           </ul>
-          <button className="btn bg-blue-500 text-white m-1">
+          <button className="btn bg-blue-500 hover:bg-blue-700 text-white m-1">
             View Events
           </button>
         </div>
@@ -38,7 +38,7 @@ const Team = () => {
             <li>Easy Battle</li>
             <li>Certificate</li>
           </ul>
-          <button className="btn bg-blue-500 text-white m-1">
+          <button className="btn bg-blue-500 hover:bg-blue-700 text-white m-1">
             View Events
           </button>
         </div>
@@ -55,7 +55,7 @@ const Team = () => {
             <li>Super Battle</li>
             <li>Certificate</li>
           </ul>
-          <button className="btn bg-blue-500 text-white m-1">
+          <button className="btn bg-blue-500 hover:bg-blue-700 text-white m-1">
             View Events
           </button>
         </div>

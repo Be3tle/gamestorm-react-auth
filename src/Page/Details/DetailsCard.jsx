@@ -15,7 +15,7 @@ const DetailsCard = ({ card }) => {
       <div className="flex flex-col text-left w-[1080px] mx-auto">
         <h5 className="text-2xl font-bold pt-10 pb-5">{title}</h5>
         <p className="">{description2}</p>
-        <button className="btn bg-blue-500 text-white font-bold my-2 w-40">
+        <button className="btn bg-blue-500 hover:bg-blue-700 text-white font-bold my-2 w-40">
           Register Now
         </button>
       </div>

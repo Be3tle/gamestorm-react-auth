@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import useGetAllData from "../../hooks/useGetAllData";
 import DetailsCard from "./DetailsCard";
 import Navbar from "../../Components/Header/Navbar";
+import Footer from "../../Components/Footer/Footer";
 
 const Details = () => {
   const { id } = useParams();
@@ -28,6 +29,7 @@ const Details = () => {
     <div>
       <Navbar></Navbar>
       <DetailsCard card={card}></DetailsCard>
+      <Footer></Footer>
     </div>
   );
 };

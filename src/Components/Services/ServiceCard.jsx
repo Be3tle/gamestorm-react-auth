@@ -18,7 +18,7 @@ const ServiceCard = ({ card }) => {
             <p className="font-normal">{description}</p>
           </div>
           <Link to={`/service/${id}`} state={title}>
-            <button className="btn bg-blue-500 text-white m-1 w-60">
+            <button className="btn bg-blue-500 hover:bg-blue-700 text-white m-1 w-60">
               Register Now
             </button>
           </Link>

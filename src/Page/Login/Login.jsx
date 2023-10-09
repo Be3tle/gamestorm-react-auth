@@ -1,13 +1,17 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Navbar from "../../Components/Header/Navbar";
 import { AuthContext } from "../../Provider/AuthProvider";
+import Footer from "../../Components/Footer/Footer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
-  console.log("location in the login page", location);
+
+  const [loginError, setLoginError] = useState("");
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -19,20 +23,22 @@ const Login = () => {
     signIn(email, password)
       .then((result) => {
         console.log(result.user);
+        toast("Login successful!");
 
         // navigate after login
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.error(error);
+        setLoginError(error.message);
       });
   };
 
   return (
-    <div>
+    <div className="text-center">
       <Navbar></Navbar>
       <div>
-        <h2 className="text-3xl my-10 text-center">Please Login</h2>
+        <h2 className="text-3xl my-10 text-center">Please Sign in</h2>
         <form onSubmit={handleLogin} className=" md:w-3/4 lg:w-1/2 mx-auto">
           <div className="form-control">
             <label className="label">
@@ -57,6 +63,9 @@ const Login = () => {
               placeholder="Password"
               className="input input-bordered"
             />
+
+            {loginError && <p className="text-red-600 my-5">{loginError}</p>}
+
             <label className="label">
               <a href="#" className="label-text-alt link link-hover">
                 Forgot password?
@@ -64,16 +73,23 @@ const Login = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Sign in</button>
+            <button className="btn bg-blue-500 hover:bg-blue-700 text-white">
+              Sign in
+            </button>
           </div>
         </form>
         <p className="text-center mt-4">
-          Do not have an account{" "}
-          <Link className="text-blue-600 font-bold" to="/register">
+          Do not have an account?{" "}
+          <Link
+            className="text-blue-500 hover:text-blue-700 font-bold"
+            to="/register"
+          >
             Register
           </Link>
         </p>
       </div>
+      <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 };

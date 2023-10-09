@@ -1,9 +1,15 @@
-# React + Vite
+# Gamestorm
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Site](https://gamestorm-react-auth-d9c59.web.app/)
 
-Currently, two official plugins are available:
+## About us
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# b8a9-event-management-Be3tle
+Gamestorm is a platform dedicated to managing esports events. We provide a space for gamers to compete, connect, and celebrate their passion for gaming.
+
+## Features
+
+- **Tournament Management**: Seamlessly organize and manage esports tournaments of various genres.
+- **Player Registration**: Allows players to register for upcoming tournaments and events.
+- **Live Streaming Integration**: Stream and watch live gameplay directly on the platform.
+- **Prize Distribution**: Effortlessly distribute prizes to the winners of the tournaments.
+- **24/7 Support**: Our team is available round the clock to assist with any queries or concerns.

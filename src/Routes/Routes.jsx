@@ -5,6 +5,8 @@ import Details from "../Page/Details/Details";
 import Login from "../Page/Login/Login";
 import Register from "../Page/Login/Register";
 import PrivateRoute from "./PrivateRoute";
+import BookNow from "../Page/BookNow/BookNow";
+import AboutUs from "../Page/AboutUs/AboutUs";
 
 const routes = createBrowserRouter([
   {
@@ -33,6 +35,22 @@ const routes = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/book-now",
+        element: (
+          <PrivateRoute>
+            <BookNow></BookNow>,
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/about",
+        element: (
+          <PrivateRoute>
+            <AboutUs></AboutUs>,
+          </PrivateRoute>
+        ),
       },
     ],
   },
