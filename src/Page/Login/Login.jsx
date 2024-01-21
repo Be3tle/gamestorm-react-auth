@@ -1,12 +1,12 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useContext, useState } from "react";
-import Navbar from "../../Components/Header/Navbar";
-import { AuthContext } from "../../Provider/AuthProvider";
-import Footer from "../../Components/Footer/Footer";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
-import app from "../../firebase/firebase.config";
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useContext, useState } from 'react';
+import Navbar from '../../Components/Header/Navbar';
+import { AuthContext } from '../../Provider/AuthProvider';
+import Footer from '../../Components/Footer/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import app from '../../firebase/firebase.config';
 
 const Login = () => {
   const provider = new GoogleAuthProvider();
@@ -15,7 +15,7 @@ const Login = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const [loginError, setLoginError] = useState("");
+  const [loginError, setLoginError] = useState('');
 
   const handleGoogleSignIn = () => {
     signInWithPopup(auth, provider)
@@ -23,7 +23,7 @@ const Login = () => {
         const user = result.user;
         console.log(user);
         // navigate after login
-        navigate(location?.state ? location.state : "/");
+        navigate(location?.state ? location.state : '/');
       })
       .catch((error) => {
         console.log(error.message);
@@ -33,16 +33,16 @@ const Login = () => {
     e.preventDefault();
     console.log(e.currentTarget);
     const form = new FormData(e.currentTarget);
-    const email = form.get("email");
-    const password = form.get("password");
+    const email = form.get('email');
+    const password = form.get('password');
     console.log(email, password);
     signIn(email, password)
       .then((result) => {
         console.log(result.user);
-        toast("Login successful!");
+        toast('Login successful!');
 
         // navigate after login
-        navigate(location?.state ? location.state : "/");
+        navigate(location?.state ? location.state : '/');
       })
       .catch((error) => {
         console.error(error);
@@ -52,7 +52,6 @@ const Login = () => {
 
   return (
     <div className="text-center">
-      <Navbar></Navbar>
       <div>
         <h2 className="text-3xl my-10 text-center">Please Sign in</h2>
         <form onSubmit={handleLogin} className=" md:w-3/4 lg:w-1/2 mx-auto">
@@ -102,7 +101,7 @@ const Login = () => {
         </form>
 
         <p className="text-center mt-4">
-          Do not have an account?{" "}
+          Do not have an account?{' '}
           <Link
             className="text-blue-500 hover:text-blue-700 font-bold"
             to="/register"
