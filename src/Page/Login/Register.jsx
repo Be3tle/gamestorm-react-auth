@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
-import Footer from '../../Components/Footer/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -120,7 +119,6 @@ const Register = () => {
           </Link>
         </p>
       </div>
-      <Footer></Footer>
       <ToastContainer />
     </div>
   );
