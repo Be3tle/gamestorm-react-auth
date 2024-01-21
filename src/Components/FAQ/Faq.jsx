@@ -1,15 +1,15 @@
-import { FaNewspaper } from "react-icons/fa";
-import { MdSupportAgent, MdPlayCircleFilled } from "react-icons/md";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { FaNewspaper } from 'react-icons/fa';
+import { MdSupportAgent, MdPlayCircleFilled } from 'react-icons/md';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Faq = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000, 
-      easing: "ease-in-out",
-      once: true, 
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
     });
   }, []);
   return (
@@ -24,7 +24,7 @@ const Faq = () => {
           <FaNewspaper className="text-9xl text-blue-500" />
           <div className="ml-4 text-left">
             <h2 className="text-2xl font-semibold">Detailed Document</h2>
-            <p className="mt-2">
+            <p className="mt-2 text-justify">
               Our documentation is as thorough as possible. Each template option
               is detailed and easy to follow.
             </p>
@@ -34,7 +34,7 @@ const Faq = () => {
           <MdSupportAgent className="text-9xl text-blue-500" />
           <div className="ml-4 text-left">
             <h2 className="text-2xl font-semibold">Premium Support</h2>
-            <p className="mt-2">
+            <p className="mt-2 text-justify">
               We offer a dedicated & friendly support, We will try to reply as
               fast as we can. We will be in touch. Good luck!
             </p>
@@ -44,7 +44,7 @@ const Faq = () => {
           <MdPlayCircleFilled className="text-9xl text-blue-500" />
           <div className="ml-4 text-left">
             <h2 className="text-2xl font-semibold">Video Tutorials</h2>
-            <p className="mt-2">
+            <p className="mt-2 text-justify">
               Watch our video tutorials, step by step instructions to set up the
               Template. We have separated with video tutorials.
             </p>
