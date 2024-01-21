@@ -15,10 +15,10 @@ const Faq = () => {
   return (
     <div className="my-20 px-20">
       <p>Find Answers To All Your Questions</p>
-      <h1 className="text-3xl font-bold mb-10 mt-2">GOT A PROBLEM?</h1>
+      <h1 className="text-2xl lg:text-3xl font-bold mb-10 mt-2">GOT A PROBLEM?</h1>
       <div
         data-aos="slide-down"
-        className="flex justify-center items-center space-x-8 "
+        className="grid grid-cols-1 lg:grid-cols-3 gap-8"
       >
         <div className="flex">
           <FaNewspaper className="text-9xl text-blue-500" />
