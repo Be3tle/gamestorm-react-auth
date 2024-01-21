@@ -1,6 +1,5 @@
 import { useLoaderData } from 'react-router-dom';
 import Services from '../../Components/Services/Services';
-import Footer from '../../Components/Footer/Footer';
 import Team from '../../Components/Team/Team';
 import Header from '../../Components/Header/Header';
 import Faq from '../../Components/FAQ/Faq';
@@ -13,7 +12,6 @@ const Home = () => {
       <Services cards={cards}></Services>
       <Team></Team>
       <Faq></Faq>
-      <Footer></Footer>
     </div>
   );
 };
