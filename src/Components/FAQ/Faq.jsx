@@ -23,7 +23,7 @@ const Faq = () => {
         <div className="flex">
           <FaNewspaper className="text-9xl text-blue-500" />
           <div className="ml-4 text-left">
-            <h2 className="text-2xl font-semibold">Detailed Document</h2>
+            <h2 className="text-xl font-semibold">Detailed Document</h2>
             <p className="mt-2 text-justify">
               Our documentation is as thorough as possible. Each template option
               is detailed and easy to follow.
@@ -33,7 +33,7 @@ const Faq = () => {
         <div className="flex">
           <MdSupportAgent className="text-9xl text-blue-500" />
           <div className="ml-4 text-left">
-            <h2 className="text-2xl font-semibold">Premium Support</h2>
+            <h2 className="text-xl font-semibold">Premium Support</h2>
             <p className="mt-2 text-justify">
               We offer a dedicated & friendly support, We will try to reply as
               fast as we can. We will be in touch. Good luck!
@@ -43,7 +43,7 @@ const Faq = () => {
         <div className="flex">
           <MdPlayCircleFilled className="text-9xl text-blue-500" />
           <div className="ml-4 text-left">
-            <h2 className="text-2xl font-semibold">Video Tutorials</h2>
+            <h2 className="text-xl font-semibold">Video Tutorials</h2>
             <p className="mt-2 text-justify">
               Watch our video tutorials, step by step instructions to set up the
               Template. We have separated with video tutorials.
