@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex justify-center items-center mt-10" style={headerStyle}>
+    <div className="flex justify-center items-center" style={headerStyle}>
       <div className="text-left mx-auto text-white">
         <h2 className="font-normal text-lg lg:font-medium lg:text-xl">
           -----GAMING EVENTS
