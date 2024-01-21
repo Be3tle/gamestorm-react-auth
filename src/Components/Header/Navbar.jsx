@@ -1,8 +1,8 @@
-import { Link, NavLink } from "react-router-dom";
-import logo from "./Gamestorm.jpg";
-import emblem from "./user.png";
-import { useContext } from "react";
-import { AuthContext } from "../../Provider/AuthProvider";
+import { Link, NavLink } from 'react-router-dom';
+import logo from './Gamestorm.jpg';
+import emblem from './user.png';
+import { useContext } from 'react';
+import { AuthContext } from '../../Provider/AuthProvider';
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
