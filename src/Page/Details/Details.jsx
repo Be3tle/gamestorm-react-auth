@@ -27,9 +27,8 @@ const Details = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
       <DetailsCard card={card}></DetailsCard>
-      <Footer></Footer>
+      
     </div>
   );
 };
