@@ -1,12 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
-
-import Footer from "../../Components/Footer/Footer";
-import Navbar from "../../Components/Header/Navbar";
-
 const AboutUs = () => {
   return (
     <div>
-      <Navbar></Navbar>
       <div className="container mx-auto mt-10">
         <h1 className="text-3xl font-bold mb-6">About Gamestorm</h1>
         <p className="mb-4">
@@ -27,11 +21,10 @@ const AboutUs = () => {
           to create memorable experiences and lasting friendships.
         </p>
         <p className="mb-4">
-          Join us in the arena, and let's make every match a moment to remember.
-          Game on!
+          {`Join us in the arena, and let's make every match a moment to remember.
+          Game on!`}
         </p>
       </div>
-      <Footer></Footer>
     </div>
   );
 };
