@@ -1,13 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Team = () => {
   useEffect(() => {
     Aos.init({
       duration: 1000,
-      easing: "ease-in-out",
+      easing: 'ease-in-out',
       once: true,
     });
   }, []);
@@ -20,7 +20,7 @@ const Team = () => {
       <hr className="w-16 text-center h-1 bg-blue-400 mb-4" />
 
       {/* card container */}
-      <div data-aos="zoom-in" className="grid grid-cols-3 mb-7">
+      <div data-aos="zoom-in" className="grid grid-cols-1 gap-5 lg:grid-cols-3 mb-7">
         {/* card 1 */}
         <div
           className={`flex w-64 flex-col rounded-lg mx-5 border-slate-300 border-2`}
