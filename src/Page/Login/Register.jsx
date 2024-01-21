@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
-import { useContext, useState } from "react";
-import Navbar from "../../Components/Header/Navbar";
-import { AuthContext } from "../../Provider/AuthProvider";
-import Footer from "../../Components/Footer/Footer";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { Link } from 'react-router-dom';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../../Provider/AuthProvider';
+import Footer from '../../Components/Footer/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
-  const [regError, setRegError] = useState("");
+  const [regError, setRegError] = useState('');
   const { createUser } = useContext(AuthContext);
 
   const handleRegister = (e) => {
@@ -15,21 +14,21 @@ const Register = () => {
     console.log(e.currentTarget);
     const form = new FormData(e.currentTarget);
 
-    const name = form.get("name");
-    const photo = form.get("photo");
-    const email = form.get("email");
-    const password = form.get("password");
+    const name = form.get('name');
+    const photo = form.get('photo');
+    const email = form.get('email');
+    const password = form.get('password');
     console.log(name, photo, email, password);
 
     // reset error
 
-    setRegError("");
+    setRegError('');
 
     const pwRegex = /^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
 
     if (!pwRegex.test(password)) {
       setRegError(
-        "Password should contain at least 6 characters, a capital letter and a special character"
+        'Password should contain at least 6 characters, a capital letter and a special character'
       );
       return;
     }
@@ -37,7 +36,7 @@ const Register = () => {
     createUser(email, password)
       .then((result) => {
         console.log(result.user);
-        toast("Registration successful!");
+        toast('Registration successful!');
       })
       .catch((error) => {
         console.error(error);
@@ -47,7 +46,6 @@ const Register = () => {
 
   return (
     <div>
-      <Navbar></Navbar>
       <div className="text-center">
         <h2 className="text-3xl my-10 text-center">Please Register</h2>
         <form onSubmit={handleRegister} className=" md:w-3/4 lg:w-1/2 mx-auto">
@@ -113,7 +111,7 @@ const Register = () => {
         </form>
 
         <p className="text-center mt-4">
-          Already have an account?{" "}
+          Already have an account?{' '}
           <Link
             className="text-blue-500 hover:text-blue-700 font-bold"
             to="/login"
