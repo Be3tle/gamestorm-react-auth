@@ -13,7 +13,7 @@ const Faq = () => {
     });
   }, []);
   return (
-    <div className="my-20">
+    <div className="my-20 px-20">
       <p>Find Answers To All Your Questions</p>
       <h1 className="text-3xl font-bold mb-10 mt-2">GOT A PROBLEM?</h1>
       <div
